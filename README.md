@@ -17,7 +17,7 @@ Framework for options validation in *Mathematica*.
 * [Compatibility](#compatibility)
 * [Bugs and requests](#bugs-and-requests)
 * [Contributing](#contributing)
-* [Usage in other packages](#usage-in-other_packages)
+* [Usage in other packages](#usage-in-other-packages)
 * [License](#license)
 * [Versioning](#versioning)
 
@@ -41,9 +41,13 @@ When tests fail - function can either return a value denoting failure
 Default values of options can be also automatically validated when they are
 changed.
 
-You can find usage example in
-[answer to "Manipulations with options" question](http://mathematica.stackexchange.com/a/105773/14303)
-on Mathematica Stack Exchange.
+You can find basic usage examples in
+[OptionsValidation PackageData entry](http://packagedata.net/index.php/links/examples/id/248).
+More involved examples can be found in answers to 
+[Manipulations with options](http://mathematica.stackexchange.com/a/105773/14303)
+and
+[How to check the validity of an option value](http://mathematica.stackexchange.com/a/119973/14303)
+questions on Mathematica Stack Exchange.
 
 
 
