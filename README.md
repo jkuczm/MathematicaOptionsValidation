@@ -3,7 +3,7 @@
 [![releases](http://img.shields.io/github/release/jkuczm/MathematicaOptionsValidation.svg)](https://github.com/jkuczm/MathematicaOptionsValidation/releases)
 [![SemVer 2.0.0](http://img.shields.io/badge/SemVer-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)
 [![license MIT](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jkuczm/MathematicaOptionsValidation/blob/master/LICENSE)
-[![Mathematica 8.0 - 10.4](http://img.shields.io/badge/Mathematica-8.0 -- 10.4-brightgreen.svg)](#compatibility)
+[![Mathematica 8.0 - 11.0](http://img.shields.io/badge/Mathematica-8.0 -- 11.0-brightgreen.svg)](#compatibility)
 
 
 Framework for options validation in *Mathematica*.
@@ -94,12 +94,12 @@ Import["https://raw.githubusercontent.com/jkuczm/MathematicaOptionsValidation/ma
 
 This package contains extensive
 [automatic test suite](https://github.com/jkuczm/MathematicaOptionsValidation/tree/master/OptionsValidation/Tests).
-Package is tested with *Mathematica* versions 8.0, 9.0, 10.0, 10.1, 10.2,
-10.3 and 10.4 on Linux. Since it doesn't contain any OS specific code it should
-work with above versions on all operating systems.
+Package is tested with all *Mathematica* major and minor versions from 8.0 to
+11.0 on Linux. Since it doesn't contain any OS specific code it should work
+with above versions on all operating systems.
 
 There's also no obvious reason for package not to work on earlier (6.0+)
-versions of Mathematica.
+versions of *Mathematica*.
 
 
 
