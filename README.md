@@ -60,18 +60,10 @@ To install newest version of OptionsValidation package,
 directly from repository, in *Mathematica* version 10 or newer,
 evaluate following code:
 ```Mathematica
-PacletInstall@"https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation.0.1.1.paclet"
+PacletInstall@"http://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation-0.1.1.paclet"
 ```
 
 Note that above requires allowing *Mathematica* to use the Internet.
-
-If in your setup *Mathematica* doesn't have Internet access,
-or you're using version older than 10, download
-[OptionsValidation.0.1.1.paclet](https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation.0.1.1.paclet)
-file and evaluate `PacletInstall` with path to downloaded file:
-```Mathematica
-PacletInstall@"path/to/downloaded/OptionsValidation.0.1.1.paclet"
-```
 
 To load OptionsValidation package evaluate:
 ```Mathematica
@@ -86,26 +78,23 @@ PacletUninstall@"OptionsValidation"
 
 ### Manual installation
 
-Download
-[OptionsValidation.0.1.1.paclet](https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation.0.1.1.paclet)
-file.
-
-Extract downloaded file to any directory which is on Mathematica `$Path`,
-e.g. to one obtained by evaluating
+If in your setup *Mathematica* doesn't have Internet access,
+or you're using version older than 10, download
+[OptionsValidation.0.1.1.paclet](https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation-0.1.1.paclet)
+file and evaluate `PacletInstall` with path to downloaded file:
 ```Mathematica
-FileNameJoin@{$UserBaseDirectory, "Applications"}
+PacletInstall@"path/to/downloaded/OptionsValidation.0.1.1.paclet"
 ```
 
-
-Rename `OptionsValidation-0.1.1` directory to `OptionsValidation`
-
-To load the package evaluate:
+To load OptionsValidation package evaluate:
 ```Mathematica
 Needs@"OptionsValidation`"
 ```
 
-To uninstall OptionsValidation package delete created above `OptionsValidation`
-directory.
+To uninstall OptionsValidation package evaluate:
+```Mathematica
+PacletUninstall@"OptionsValidation"
+```
 
 
 ### No installation
