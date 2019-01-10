@@ -1,9 +1,9 @@
 # OptionsValidation
 
-[![releases](http://img.shields.io/github/release/jkuczm/MathematicaOptionsValidation.svg)](https://github.com/jkuczm/MathematicaOptionsValidation/releases)
-[![SemVer 2.0.0](http://img.shields.io/badge/SemVer-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)
-[![license MIT](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jkuczm/MathematicaOptionsValidation/blob/master/LICENSE)
-[![Mathematica 8.0 - 11.0](http://img.shields.io/badge/Mathematica-8.0 -- 11.0-brightgreen.svg)](#compatibility)
+[![releases](https://img.shields.io/github/release/jkuczm/MathematicaOptionsValidation.svg)](https://github.com/jkuczm/MathematicaOptionsValidation/releases)
+[![Mathematica 8.0 - 11.0](https://img.shields.io/badge/Mathematica-8.0_--_11.0-brightgreen.svg)](#compatibility)
+[![license MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jkuczm/MathematicaOptionsValidation/blob/master/LICENSE)
+[![SemVer 2.0.0](https://img.shields.io/badge/SemVer-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)
 
 
 Framework for options validation in *Mathematica*.
@@ -56,36 +56,63 @@ questions on Mathematica Stack Exchange.
 
 ### Automatic installation
 
-To install OptionsValidation package evaluate:
+To install newest version of OptionsValidation package,
+directly from repository, in *Mathematica* version 10 or newer,
+evaluate following code:
 ```Mathematica
-Import["https://raw.githubusercontent.com/jkuczm/MathematicaOptionsValidation/master/BootstrapInstall.m"]
+PacletInstall@"https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation.0.1.1.paclet"
 ```
 
-Note that this will also install
-[ProjectInstaller](https://github.com/lshifr/ProjectInstaller)
-package, if you don't have it already installed.
+Note that above requires allowing *Mathematica* to use the Internet.
 
-To load OptionsValidation package evaluate: ``Needs["OptionsValidation`"]``.
+If in your setup *Mathematica* doesn't have Internet access,
+or you're using version older than 10, download
+[OptionsValidation.0.1.1.paclet](https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation.0.1.1.paclet)
+file and evaluate `PacletInstall` with path to downloaded file:
+```Mathematica
+PacletInstall@"path/to/downloaded/OptionsValidation.0.1.1.paclet"
+```
+
+To load OptionsValidation package evaluate:
+```Mathematica
+Needs@"OptionsValidation`"
+```
+
+To uninstall OptionsValidation package evaluate:
+```Mathematica
+PacletUninstall@"OptionsValidation"
+```
 
 
 ### Manual installation
 
-1. Download latest released
-   [OptionsValidation.zip](https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.0/OptionsValidation.zip)
-   file.
+Download
+[OptionsValidation.0.1.1.paclet](https://github.com/jkuczm/MathematicaOptionsValidation/releases/download/v0.1.1/OptionsValidation.0.1.1.paclet)
+file.
 
-2. Extract downloaded `OptionsValidation.zip` to any directory which is on
-   Mathematica `$Path`, e.g. to one obtained by evaluating
-   `FileNameJoin[{$UserBaseDirectory,"Applications"}]`.
+Extract downloaded file to any directory which is on Mathematica `$Path`,
+e.g. to one obtained by evaluating
+```Mathematica
+FileNameJoin@{$UserBaseDirectory, "Applications"}
+```
 
-3. To load the package evaluate: ``Needs["OptionsValidation`"]``
+
+Rename `OptionsValidation-0.1.1` directory to `OptionsValidation`
+
+To load the package evaluate:
+```Mathematica
+Needs@"OptionsValidation`"
+```
+
+To uninstall OptionsValidation package delete created above `OptionsValidation`
+directory.
 
 
 ### No installation
 
 To use package directly from the Web, without installation, evaluate:
 ```Mathematica
-Import["https://raw.githubusercontent.com/jkuczm/MathematicaOptionsValidation/master/NoInstall.m"]
+Import@"https://raw.githubusercontent.com/jkuczm/MathematicaOptionsValidation/master/NoInstall.m"
 ```
 
 
@@ -98,8 +125,9 @@ Package is tested with all *Mathematica* major and minor versions from 8.0 to
 11.0 on Linux. Since it doesn't contain any OS specific code it should work
 with above versions on all operating systems.
 
-There's also no obvious reason for package not to work on earlier (6.0+)
-versions of *Mathematica*.
+There's also no obvious reason for package not to work on older (6.0+)
+and newer (11.1+) versions of *Mathematica*,
+but it was not tested with these versions.
 
 
 
@@ -113,9 +141,6 @@ If you find any bugs, or have a feature request, please create an
 ## Contributing
 
 Feel free to fork and send pull requests.
-
-If you want to use Ant scripts from this repository you will also need to
-install [WWBCommon](https://github.com/jkuczm/WWBCommon) project.
 
 All contributions are welcome!
 
