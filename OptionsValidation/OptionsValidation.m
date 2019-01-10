@@ -515,7 +515,7 @@ check is attached to f symbol."
 protectedQ::usage =
 "\
 protectedQ[sym] \
-rerns True if given symbol is protected, otherwise returns False."
+returns True if given symbol is protected, otherwise returns False."
 
 
 useOverriddenQ::usage =
